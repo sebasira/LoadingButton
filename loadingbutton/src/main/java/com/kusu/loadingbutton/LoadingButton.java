@@ -340,6 +340,8 @@ public class LoadingButton extends AppCompatButton implements View.OnTouchListen
         } else {
             if (text.length() != 0)
                 setText(text);
+            refresh();
+            mAnimatedDrawable = null;
         }
     }
 
